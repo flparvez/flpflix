@@ -9,7 +9,7 @@ const initialState = {
 // const api ="http://127.0.0.1:8000/api/"
 // const api ="https://jsonplaceholder.typicode.com/users"
 export const fetchApiUsers = createAsyncThunk("fetchApiUsers", async () => {
-    const result = await fetch("http://127.0.0.1:8000/api/");
+    const result = await fetch("https://flpflix-flparvez.vercel.app/api/");
     return result.json();
 })
 
