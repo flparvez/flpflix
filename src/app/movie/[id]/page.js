@@ -28,14 +28,14 @@ const Page = () => {
 
 
     return (
-        <div className='bg-[#546E7A]'>
+        <div className='dark:bg-black bg-white'>
             {singleProject ? (
 
-                <div className="flex">
+                <div className="sm:flex">
                     {/* 1st Column (25%) */}
-                    <div className="w-1/4 p-2 ">
+                    <div className="hidden sm:w-1/4  p-2 ">
                         {/* Content for the 1st column */}
-                        <div className='xl:text-center   dark:bg-gray-800  text-black dark:text-white'>
+                        <div className='   dark:bg-gray-800  text-black dark:text-white'>
 
 
                             <h2 className=' mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white'>{singleProject.mname}</h2>
@@ -50,11 +50,11 @@ const Page = () => {
                     </div>
 
                     {/* 2nd Column (50%) */}
-                    <div className="w-2/4 p-2 ">
+                    <div className="sm:w-2/4 p-2 ">
                         {/* Content for the 2nd column */}
 
                         <h2 className=' mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white'>{singleProject.mname}</h2>
-                        <h2 className='mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white'> Netflix \ <span>Prime Video </span></h2>
+                        <h2 className='mb-2 text-xl font-extralight  rounded text-black dark:text-white'> Netflix \ <span>Prime Video </span></h2>
 
 
 
@@ -90,8 +90,10 @@ const Page = () => {
 
                     </div>
 
+
+
                     {/* 3rd Column (25%) */}
-                    <div className="w-1/4 p-2 ">
+                    <div className="sm:w-1/4 p-2 ">
                         {/* Content for the 3rd column */}
                         <div className=' '>
 

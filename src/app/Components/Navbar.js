@@ -8,11 +8,11 @@ const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <nav className="bg-gray-800 p-4">
+        <nav className="dark:bg-gray-800 bg-white p-4">
             <div className="flex items-center justify-between">
                 <div className="flex items-center">
                     <img src="movie.png" alt="Logo" className="h-8" />
-                    <p className="text-white ml-2"><Link href={'/'}> FLpFlix </Link> </p>
+                    <p className="dark:text-white text-black ml-2"><Link href={'/'}> FLpFlix </Link> </p>
                 </div>
 
 

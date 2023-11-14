@@ -24,16 +24,10 @@ const Page = () => {
         dispatch(fetchApiUsers())
     }, [])
 
-    const shortenText = (text, maxLength) => {
-        // You can customize this function based on your requirements
-        if (text.length > maxLength) {
-            return text.substring(0, maxLength) + '...';
-        }
-        return text;
-    };
+
     return (
-        <div>
-            <div className="mx-auto sm:columns-3 columns-2 mb-2">
+        <div className="bg-white dark:bg-black">
+            <div className="mx-auto sm:columns-3 columns-3 mb-2">
 
 
                 {
@@ -44,22 +38,25 @@ const Page = () => {
                 }
             </div>
 
-            <h2 className="text-center text-xl">From Amazon Video</h2>
 
-            <div className="mx-auto sm:columns-3 columns-2 my-2">
+            <div className="">
+
+                <h2 className="text-center text-xl">From Amazon Video</h2>
+
+                <div className="mx-auto sm:columns-3 columns-3 my-2">
 
 
-                {
-                    apiUserData.map((curElem) => {
-                        return <Mcard key={curElem.id} {...curElem} />
+                    {
+                        apiUserData.map((curElem) => {
+                            return <Mcard key={curElem.id} {...curElem} />
 
-                    })
-                }
+                        })
+                    }
 
+
+                </div>
 
             </div>
-
-
 
 
         </div>
