@@ -31,7 +31,7 @@ const Navbar = () => {
                             <h2 className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"><Link href={'/contact'}> Contact </Link></h2>
                         </li>
                         <li>
-                            <h2 className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"><Link href={'/'}> FLpFlix </Link></h2>
+                            <h2 className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"><Link href={'/admin'}>Admin</Link></h2>
                         </li>
                     </ul>
                 </div>
@@ -64,23 +64,23 @@ const Navbar = () => {
             <div className={isOpen ? 'block' : 'hidden'}>
                 <ul className="lg:hidden md:flex items-center justify-end mt-4">
                     <li className="md:ml-4">
-                        <h2 className="text-white hover:text-white">
+                        <h2 className="dark:text-white text-black hover:text-white">
                             <Link href={'/'}>Home</Link>
                         </h2>
                     </li>
                     <li className="md:ml-4">
-                        <h2 className="text-gray-300 hover:text-white">
+                        <h2 className="dark:text-white text-black hover:text-white">
                             <Link href={'/movie'}>Movie</Link>
                         </h2>
                     </li>
                     <li className="md:ml-4">
-                        <h2 className="text-gray-300 hover:text-white">
+                        <h2 className="dark:text-white text-black hover:text-white">
                             <Link href={'/about'}>About</Link>
                         </h2>
                     </li>
                     <li className="md:ml-4">
-                        <h2 className="text-gray-300 hover:text-white">
-                            <Link href={'/contact'}>Contact</Link>
+                        <h2 className="dark:text-white text-black hover:text-white">
+                            <Link href={'/admin'}>Admin</Link>
                         </h2>
                     </li>
                 </ul>

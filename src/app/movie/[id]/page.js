@@ -33,7 +33,7 @@ const Page = () => {
 
                 <div className="sm:flex">
                     {/* 1st Column (25%) */}
-                    <div className="lg:hidden  w-1/4  p-2 ">
+                    <div className="md:block sm:block hidden  w-1/4  p-2 ">
                         {/* Content for the 1st column */}
                         <div className='   dark:bg-black bg-white  text-black dark:text-white'>
 
