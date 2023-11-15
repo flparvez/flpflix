@@ -1,8 +1,15 @@
 "use client"
 
+import { useAddProjectMutation } from '@/app/redux/dataslice';
+import { useRouter } from 'next/navigation';
 import React, { useState } from 'react';
 
 const page = () => {
+
+    const router = useRouter()
+
+    const [addProject, { isError, isLoading, error }] = useAddProjectMutation() || {};
+
     const [formData, setFormData] = useState({
         mname: '',
         movied: '',
@@ -21,6 +28,9 @@ const page = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+
+        addProject(formData);
+        router.push('/', { scroll: false })
         // Here you can perform your logic to save formData into the database
         console.log('Form data to be saved:', formData);
         // For simplicity, logging the form data, you can replace this with your database saving logic.

@@ -25,32 +25,32 @@ export const apiSlice = createApi({
 
 
         // add
-        // addProject: build.mutation({
-        //     query: (data) => ({
-        //         url: '/',
-        //         method: 'POST',
-        //         body: data
-        //     }),
+        addProject: build.mutation({
+            query: (data) => ({
+                url: '/',
+                method: 'POST',
+                body: data
+            }),
 
-        //     async onQueryStarted(args, { queryFulfilled, dispatch }) {
+            async onQueryStarted(args, { queryFulfilled, dispatch }) {
 
-        //         try {
+                try {
 
-        //             const { data: createdProject } = await queryFulfilled;
+                    const { data: createdProject } = await queryFulfilled;
 
-        //             dispatch(
-        //                 apiSlice.util.updateQueryData('getProjects', undefined, (draft) => {
-        //                     draft?.push(createdProject)
-        //                 })
-        //             )
+                    dispatch(
+                        apiSlice.util.updateQueryData('getProjects', undefined, (draft) => {
+                            draft?.push(createdProject)
+                        })
+                    )
 
-        //         } catch (error) {
-        //             console.log(error)
-        //         }
+                } catch (error) {
+                    console.log(error)
+                }
 
-        //     }
+            }
 
-        // }),
+        }),
 
         // update 
         // updateProject: build.mutation({
@@ -148,5 +148,5 @@ export const apiSlice = createApi({
     })
 })
 
-export const { useGetProjectsQuery, useGetSingleProjectQuery, } = apiSlice
+export const { useGetProjectsQuery, useGetSingleProjectQuery, useAddProjectMutation, } = apiSlice
 // export const { useGetProjectsQuery, useGetSingleProjectQuery, useAddProjectMutation, useUpdateProjectMutation, useDeleteProjectMutation } = apiSlice

@@ -27,7 +27,7 @@ const Page = () => {
 
     return (
         <div className="bg-white dark:bg-black">
-            <div className="mx-auto sm:columns-3 columns-3 mb-2">
+            <div className="grid sm:grid-cols-4 grid-cols-3 gap-3 sm:gap-4">
 
 
                 {
@@ -43,7 +43,7 @@ const Page = () => {
 
                 <h2 className="text-center text-xl">From Amazon Video</h2>
 
-                <div className="mx-auto sm:columns-3 columns-3 my-2">
+                <div className="grid sm:grid-cols-4 grid-cols-3 gap-3 sm:gap-4">
 
 
                     {
