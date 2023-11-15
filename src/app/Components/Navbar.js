@@ -11,7 +11,7 @@ const Navbar = () => {
         <nav className="dark:bg-gray-800 bg-white p-4">
             <div className="flex items-center justify-between">
                 <div className="flex items-center">
-                    <img src="movie.png" alt="Logo" className="h-8" />
+                    <img src="https://i.postimg.cc/Pqz0w15t/movie.png" alt="Logo" className="h-8" />
                     <p className="dark:text-white text-black ml-2"><Link href={'/'}> FLpFlix </Link> </p>
                 </div>
 
