@@ -33,12 +33,12 @@ const Page = () => {
 
                 <div className="sm:flex">
                     {/* 1st Column (25%) */}
-                    <div className="hidden sm:w-1/4  p-2 ">
+                    <div className="lg:hidden  w-1/4  p-2 ">
                         {/* Content for the 1st column */}
-                        <div className='   dark:bg-gray-800  text-black dark:text-white'>
+                        <div className='   dark:bg-black bg-white  text-black dark:text-white'>
 
 
-                            <h2 className=' mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white'>{singleProject.mname}</h2>
+                            <h2 className=' mb-2  font-bold tracking-tight text-gray-900 dark:text-white'>{singleProject.mname}</h2>
 
 
 
@@ -50,7 +50,7 @@ const Page = () => {
                     </div>
 
                     {/* 2nd Column (50%) */}
-                    <div className="sm:w-2/4 p-2 ">
+                    <div className="sm:w-2/4  p-2 ">
                         {/* Content for the 2nd column */}
 
                         <h2 className=' mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white'>{singleProject.mname}</h2>
